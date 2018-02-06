@@ -1,1 +1,1 @@
-# ethicol.github.io
+# ethicol
