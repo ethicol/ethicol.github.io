@@ -72,6 +72,18 @@ body, html {
 </style>
 <body>
 <!-- Navbar (sit on top) -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar" style="background-color: rgb(255,255,255); box-shadow: -1em 5px 5px rgba(0,0,0,0.2);">
     <a class="w3-bar-item w3-button w3-hover-white w3-hide w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -121,7 +133,7 @@ body, html {
       <p><b>Brian Burr</b><br>
 	  <em>Cofounder + Engineer</em></p>
       <a href="pages/aboutbrian.html"><img src="images/brianSmall.png" class="w3-round w3-image w3-opacity-off w3-hover-opacity" width="100" height="100"></b></a><br>
-      <a href="https://www.instagram.com/brian.of.burr/?hl=en"><i class="fa fa-instagram w3-opacity-min"></i></a>
+      <a href="https://https://www.instagram.com/brian.of.burr/?hl=en"><i class="fa fa-instagram w3-opacity-min"></i></a>
 	  <a href="mailto:brian.e.burr@gmail.com"><i class="fa fa-envelope w3-opacity-min"></i></a>
 	</div>
 </div>
@@ -148,160 +160,31 @@ body, html {
     <tr>
 	  <td><img src="logos/fav_peareaten3.svg" class="w3-round w3-image w3-opacity w3-hover-opacity w3-margin-right" onclick="onClick(this)" width="100" height="100"></b></td>
 	  <td width="22%"><p><b><em><i class="w3-margin-left"></i>Ethicol.co eGen</b><br> 0.1 Beta</em><br>$22.50</td>
-	  <td><button id="orderbtn1" class="w3-round w3-button w3-large" style="a:hover{color:rgb(33,209,113);}"> ORDER </button></td>
+	  <td><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="EYU6JKGU2PQHW"><button class="w3-button w3-round w3-large"> ORDER </button></form></td>
 	  <td><button href="default1.pdf" class="w3-round w3-button w3-large" style="hover:color:rgb(33,209,113)"> INFO </button></td>
       <td><p><i class="w3-left w3-display-middle"></i>Our eGen is our flagship product and is an elegant beta version of the Instructables found <a href="https://www.instructables.com/member/ethicolco/">here</a>.</p></td>
 	</tr>
 	<tr>
 	  <td><img src="logos/fav_peareaten3.svg" class="w3-round w3-image w3-opacity w3-hover-opacity w3-margin-right" onclick="onClick(this)" width="100" height="100"></b></td>
 	  <td width="22%"><p><b><em><i class="w3-margin-left"></i>One-Year Supply Bundle</b><br> Pillows + Indicator</em><br>$35.75</td>
-	  <td><button id="orderbtn2" class="w3-round w3-button w3-large" style="a:hover{color:rgb(33,209,113);}"> ORDER </button></td>
+	  <td><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="RHAR3S59NAYD2"><button class="w3-button w3-round w3-large"> ORDER </button></form></td>
 	  <td><button href="default1.pdf" class="w3-round w3-button w3-large" style="hover:color:rgb(33,209,113)"> INFO </button></td>
       <td><p><i class="w3-left w3-display-middle"></i>The One-Year Supply Bundle is the best way to stock up for savings this year. Purchase allows membership in the <a href="pages/platinumproducerssociety.html">Ethicol.co Platinum Producers' Society</a></a>.</p></td>
 	</tr>
 	<tr>
 	  <td><img src="logos/fav_peareaten3.svg" class="w3-round w3-image w3-opacity w3-hover-opacity w3-margin-right" onclick="onClick(this)" width="100" height="100"></b></td>
 	  <td width="22%"><p><b><em><i class="w3-margin-left"></i>Biocatalytic Powder Pillows</b><br> Pack of 5</em><br>$12.00</td>
-	  <td><button id="orderbtn3" class="w3-round w3-button w3-large" style="a:hover{color:rgb(33,209,113);}"> ORDER </button></td>
+	  <td><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="SUJUQZZXW5X2Q"><button class="w3-button w3-round w3-large"> ORDER </button></form></td>
 	  <td><button href="default1.pdf" class="w3-round w3-button w3-large" style="hover:color:rgb(33,209,113)"> INFO </button></td>
       <td><p><i class="w3-left w3-display-middle"></i>These Biocatalytic Powder Pillows are required for a thriving, Ethicol.co ethanol-fermenting culture. It is recommended to add one pillow each year, as accelerated ethanol production occurs in our special Ethicol.co culture.</p></td>
 	</tr>
 	<tr>
 	  <td><img src="logos/fav_peareaten3.svg" class="w3-round w3-image w3-opacity w3-hover-opacity w3-margin-right" onclick="onClick(this)" width="100" height="100"></b></td>
 	  <td width="22%"><p><b><em><i class="w3-margin-left"></i>Ethanol Indicator Strips</b><br> Pack of 20</em><br>$12.00</td>
-	  <td><button id="orderbtn4" class="w3-round w3-button w3-large" style="a:hover{color:rgb(33,209,113);}"> ORDER </button></td>
+	  <td><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="GK7YNHYN5LQBE"><button class="w3-button w3-round w3-large"> ORDER </button></form></td>
 	  <td><button href="default1.pdf" class="w3-round w3-button w3-large" style="hover:color:rgb(33,209,113)"> INFO </button></td>
       <td><p><i class="w3-left w3-display-middle"></i>Prior to crude resale of ethanol to us here at Ethicol.co, we need to make sure that your fermentate contains a sufficient concentration of pure ethanol in order to keep you profitable in our refinery-to-retail cash conversion cycle. These test strips allow you to check the content of your fermentate!</p></td>
 	</tr>
-	
-	<!-- Order Button Modal -->
-	<div id="orderbtnModal" class="modal">
-
-	  <!-- Modal Content -->
-	  <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>
-		  <div id="paypal-button" class="w3-center"></div>
-
-		  <script>
-			paypal.Button.render({
-			  env: 'production', // Or 'sandbox',
-
-			  commit: true, // Show a 'Pay Now' button
-
-			  style: {
-				color: 'gold',
-				size: 'small'
-			  },
-
-			  payment: function(data, actions) {
-					/* 
-					* Set up the payment here 
-					*/
-			  },
-
-			  onAuthorize: function(data, actions) {
-					  /* 
-					  * Execute the payment here 
-					  */
-					},
-
-				  onCancel: function(data, actions) {
-					  /* 
-					  * Buyer cancelled the payment 
-					  */
-				  },
-
-				  onError: function(err) {
-					  /* 
-					  * An error occurred during the transaction 
-					  */
-				  }
-				  }, '#paypal-button');
-		    </script>
-	  </p>
-    </div>
-	<style>
-		/* The Modal (background) */
-		.modal {
-			display: none; /* Hidden by default */
-			position: fixed; /* Stay in place */
-			z-index: 1; /* Sit on top */
-			left: 0;
-			top: 0;
-			width: 100%; /* Full width */
-			height: 100%; /* Full height */
-			overflow: auto; /* Enable scroll if needed */
-			background-color: rgb(0,0,0); /* Fallback color */
-			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		}
-
-		/* Modal Content/Box */
-		.modal-content {
-			background-color: #fefefe;
-			margin: 15% auto; /* 15% from the top and centered */
-			padding: 20px;
-			border: 1px solid #888;
-			width: 80%; /* Could be more or less, depending on screen size */
-		}
-
-		/* The Close Button */
-		.close {
-			color: #aaa;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-		}
-
-		.close:hover,
-		.close:focus {
-			color: black;
-			text-decoration: none;
-			cursor: pointer;
-		}
-	</style>
-	<script>
-		var modal = document.getElementById('orderbtnModal');
-		var btn = document.getElementById("orderbtn1");
-		var span = document.getElementsByClassName("close")[0];
-		btn.onclick = function() {modal.style.display = "block";}
-		span.onclick = function() {modal.style.display = "none";}
-		window.onclick = function(event) {if (event.target == modal) {modal.style.display = "none";}}
-	</script>
-	<script>
-		var modal = document.getElementById('orderbtnModal');
-		var btn = document.getElementById("orderbtn2");
-		var span = document.getElementsByClassName("close")[0];
-		btn.onclick = function() {modal.style.display = "block";}
-		span.onclick = function() {modal.style.display = "none";}
-		window.onclick = function(event) {if (event.target == modal) {modal.style.display = "none";}}
-	</script>
-	<script>
-		var modal = document.getElementById('orderbtnModal');
-		var btn = document.getElementById("orderbtn3");
-		var span = document.getElementsByClassName("close")[0];
-		btn.onclick = function() {modal.style.display = "block";}
-		span.onclick = function() {modal.style.display = "none";}
-		window.onclick = function(event) {if (event.target == modal) {modal.style.display = "none";}}
-	</script>
-	<script>
-		var modal = document.getElementById('orderbtnModal');
-		var btn = document.getElementById("orderbtn4");
-		var span = document.getElementsByClassName("close")[0];
-		btn.onclick = function() {modal.style.display = "block";}
-		span.onclick = function() {modal.style.display = "none";}
-		window.onclick = function(event) {if (event.target == modal) {modal.style.display = "none";}}
-	</script>
-</div>
-	<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-      <img class="w3-modal-content w3-center" id="img01" style="width:30%">
-    </div>
-    <script>
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-      }
-    </script>
   </table>
 </div>
 
