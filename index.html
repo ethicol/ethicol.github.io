@@ -77,17 +77,17 @@ body, html {
   <div class="w3-bar" id="myNavbar" style="background-color: rgb(255,255,255); box-shadow: -1em 5px 5px rgba(0,0,0,0.2);">
     <a href="#home" class="w3-bar-item w3-display-left w3-button w3-hide-small w3-hover-white" style="width: 10%;"><img src="logos/fav_peareaten3.svg" style="max-width: 20%; max-height: auto;"></img></a>
     <i class="w3-bar-item" style="width: 8%;"></i>
-	<a href="#about" class="w3-bar-item w3-button w3-hide-small w3-margin-right w3-hover-white"><i class="fa fa-user"></i> ABOUT US </a>
-    <a href="#supportus" class="w3-bar-item w3-button w3-hide-small w3-margin-right w3-hover-white"><i class="fa fa-shopping-cart"></i> SUPPORT US </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-margin-right w3-hover-white"><i class="fa fa-envelope"></i> CONTACT US </a>
+    <a href="#supportus" class="w3-bar-item w3-button w3-margin-left w3-hide-small w3-margin-right w3-hover-white"> Join Us </a>
+	<a href="#about" class="w3-bar-item w3-button w3-hide-small w3-margin-right w3-hover-white"> About </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-margin-right w3-hover-white"> Contact Us </a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
 	<a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()" style="width: 10%;"><img src="logos/fav_peareaten3.svg" style="max-width: 20%; max-height: auto;"></img></a>
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT US </a>
-    <a href="#supportus" class="w3-bar-item w3-button" onclick="toggleFunction()"> SUPPORT US </a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT US </a>
+    <a href="#supportus" class="w3-bar-item w3-button" onclick="toggleFunction()"> Join Us </a>
+	<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> About </a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> Contact Us </a>
   </div>
 </div>
 
@@ -110,34 +110,41 @@ body, html {
   </div>
 </div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center"><em>The new green machine.</em></p>
-  <p class="w3-center">Ethicol.co is the only solution for homeowners, restaurateurs, and commercial producers alike to profit from the production of ethanol using domestic food waste, yard clippings, and other non-selective feedstock.</p>
-  <div class="w3-row">
-    <div class="w3-col m7 w3-center" style="width: 25%;"> <!-- this is temporary, for spaceholding. -->
-	<p></p>
-	</div>
-	<div class="w3-col m7 w3-center" style="width:25%;">
-      <p><b>Hudson Nash</b><br>
-	  <em>Founder + CEO</em></p>
-      <a href="pages/abouthudson.html"><img src="images/meSmall.png" class="w3-round w3-image w3-opacity-off w3-hover-opacity" width="100" height="100"></b></a><br>
-      <a href="https://www.linkedin.com/in/hudsonnash"><i class="fa fa-linkedin w3-opacity-min"></i></a>
-	  <a href="mailto:jhudsonnash@gmail.com"><i class="fa fa-envelope w3-opacity-min"></i></a>
-	</div>
-	<div class="w3-col m7 w3-center" style="width:25%;">
-      <p><b>Brian Burr</b><br>
-	  <em>Cofounder + Engineer</em></p>
-      <a href="pages/aboutbrian.html"><img src="images/brianSmall.png" class="w3-round w3-image w3-opacity-off w3-hover-opacity" width="100" height="100"></b></a><br>
-      <a href="https://www.instagram.com/brian.of.burr/?hl=en"><i class="fa fa-instagram w3-opacity-min"></i></a>
-	  <a href="mailto:brian.e.burr@gmail.com"><i class="fa fa-envelope w3-opacity-min"></i></a>
-	</div>
+<!-- Map Parallax -->
+<!--
+<div class="bgimg-1 w3-display-container w3-opacity-min w3-mobile">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+  <script>
+  $('.tile')
+    // tile mouse actions
+    .on('mouseover', function(){
+      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.photo').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+    // tiles set up
+    .each(function(){
+      $(this)
+        // add a photo container
+        .append('<div class="photo"></div>')
+        // some text just to show zoom level on current item in this example
+        .append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
+        // set up a background image for each tile based on data-image attribute
+        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+    })
+</script>
+	<span><img class="tile w3-display-middle" src="images/world.png">
+  </div>
 </div>
+-->
 
 <!-- Container (Support Us Section) -->
 <div class="w3-content w3-container w3-padding-64" id="supportus">
-  <h3 class="w3-center">SUPPORT US</h3>
+  <h3 class="w3-center">Join Us</h3>
   <p class="w3-center"><em>"You're selling the vision and delivering the minimum feature set to visionaries, not everyone." -Steve Blank</em></p>
   <p class="w3-center">Help us to help the<i class="fa fa-globe w3-xlarge"></i>. Help us to help you save <i class="fa fa-money w3-xlarge"></i>.</p>
   <table style="width: 100%">
@@ -185,9 +192,34 @@ body, html {
   </table>
 </div>
 
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">About</h3>
+  <p class="w3-center"><em>The new green machine.</em></p>
+  <p class="w3-center">Ethicol.co is the only solution for homeowners, restaurateurs, and commercial producers alike to profit from the production of ethanol using domestic food waste, yard clippings, and other non-selective feedstock.</p>
+  <div class="w3-row">
+    <div class="w3-col m7 w3-center" style="width: 25%;"> <!-- this is temporary, for spaceholding. -->
+	<p></p>
+	</div>
+	<div class="w3-col m7 w3-center" style="width:25%;">
+      <p><b>Hudson Nash</b><br>
+	  <em>Founder + CEO</em></p>
+      <a href="pages/abouthudson.html"><img src="images/meSmall.png" class="w3-round w3-image w3-opacity-off w3-hover-opacity" width="100" height="100"></b></a><br>
+      <a href="https://www.linkedin.com/in/hudsonnash"><i class="fa fa-linkedin w3-opacity-min"></i></a>
+	  <a href="mailto:jhudsonnash@gmail.com"><i class="fa fa-envelope w3-opacity-min"></i></a>
+	</div>
+	<div class="w3-col m7 w3-center" style="width:25%;">
+      <p><b>Brian Burr</b><br>
+	  <em>Cofounder + Engineer</em></p>
+      <a href="pages/aboutbrian.html"><img src="images/brianSmall.png" class="w3-round w3-image w3-opacity-off w3-hover-opacity" width="100" height="100"></b></a><br>
+      <a href="https://www.instagram.com/brian.of.burr/?hl=en"><i class="fa fa-instagram w3-opacity-min"></i></a>
+	  <a href="mailto:brian.e.burr@gmail.com"><i class="fa fa-envelope w3-opacity-min"></i></a>
+	</div>
+</div>
+
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">CONTACT US</h3>
+  <h3 class="w3-center">Contact Us</h3>
   <div>
       <div class="w3-large w3-margin-bottom">
 	    <table style="width:100%">
